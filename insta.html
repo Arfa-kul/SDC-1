@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>codedamn Project</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+            <div class="logo"><a href="#"><img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/logo.png?raw=true" alt=""</a></div>
+        <div class="searchbar">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-links">
+          <ul class="nav-group">
+            <li class="nav-item"><a href="#"><i class="fas fa-home"></i></a></li>
+            <li class="nav-item"><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+            <li class="nav-item"><a href=""><i class="far fa-compass"></i></a></li>
+            <li class="nav-item"><a href=""><i class="far fa-heart"></i></a></li>
+            <li class="nav-item">
+              <div class="action">
+                <div class="profile" onclick="menuToggle()">
+                  <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/crop.png?raw=true" alt="user Avatar">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="col-9">
+        <div class="statuses">
+          <div class="status">
+            <div class="image">
+              <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-1.jpeg?raw=true" alt="">
+            </div>
+          </div>
+          <div class="status">
+            <div class="image">
+              <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-2.jpeg?raw=true" alt="">
+            </div>
+          </div>
+          <div class="status">
+            <div class="image">
+              <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-3.jpeg?raw=true" alt="">
+            </div>
+          </div>
+          <div class="status">
+            <div class="image">
+              <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-4.jpeg?raw=true" alt="">
+            </div>
+          </div>
+          <div class="status">
+            <div class="image">
+              <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-5.jpeg?raw=true" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-1.jpeg?raw=true"
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <h3>sam<br><span>Berlin, Germany</span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+            
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">204 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>sam</b> 
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 33 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">2 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comeent...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-2.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Aliya<br><span></span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+            <img src="data:image/jpeg;base64,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" alt="post-1" class="cover">
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">119 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>cody</b>
+        
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 20 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">4 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comeent...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-3.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Mayank<br><span>Dehradun, India</span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+           
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">184 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>Mayank</b> Nature <span>#love</span>
+                <span>#2021</span> 
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 25 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">9 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comeent...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-4.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>maham<br><span>Texas, USA</span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+            <img src="https://th.bing.com/th/id/OIP.iaMSs_UaoLcOgV4fOP5y1gHaGl?w=176&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="post-1" class="cover">
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">3,684 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>joey</b> Know thy self <span>#USA</span>
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 245 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">4 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comeent...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-5.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>rudra<br><span>Goa, India</span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+            <img src="data:image/jpeg;base64,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" alt="post-1" class="cover">
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">114 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>Rudra</b> Vacations <span>#Goa</span> 
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 15 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">14 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comeent...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <h4>Suggestions For You</h4>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-1.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>sam<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-2.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Aliya<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-3.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Mayank<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-4.jpeg?raw=true" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>maham<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="https://github.com/mayankchaudhary26/Instagram-Clone-Project/blob/main/assets/images/user-5.jpeg?raw=true" alt="" class="cover">
+                  </div>
+                </div>
+              </div>
+              <h3>Rudra<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+<script>
+  
+  </script>
+
+</html>
